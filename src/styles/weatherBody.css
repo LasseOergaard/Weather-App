@@ -1,0 +1,193 @@
+:root{
+  --primary: #11998e;
+  --secondary: #38ef7d;
+  --white: #fff;
+  --gray: #9b9b9b;
+  }
+
+.weather-body {
+  display: grid;
+  grid-template: 1fr 1fr / 180px 150px 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "weather-weather weather-weather buttons buttons buttons buttons buttons"
+  "weather-weather weather-weather day1 day2 day3 day4 day5"
+  ;
+  position: absolute;
+  top: 200px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: 16px;
+  padding: 16px;
+}
+
+.weather-body div {
+  color: var(--white);
+  
+}
+
+.weather-weather {
+  grid-area: weather-weather;
+  border-right: 1px solid white;
+  margin-right: 32px;
+}
+
+.weather-weather-description {
+  font-size: 36px;
+  font-weight: 300;
+  margin-bottom: 16px;
+  
+}
+
+.weather-weather-name {
+  margin-bottom: 16px;
+  font-weight: 300;
+  
+}
+
+.weather-weather-icon {
+}
+
+.weather-weather-date {
+  font-weight: 300;
+}
+
+.weather-temp {
+  justify-content: start;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.real-temp {
+  font-size: 52px;
+  font-weight: 300;
+}
+
+.feels-like {
+  font-weight: 300;
+  margin-left: 4px;
+}
+
+.weather-additional-info {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  color: var(--white);
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.weather-wind {
+  display: flex;
+  gap: 8px;
+}
+
+.weather-wind-arrow {
+  display: none;
+}
+/* Day 1 */
+.day1 {
+  grid-area:day1 ;
+  font-weight: 300;
+  border-right: 1px solid white;
+  margin-right: 16px;
+}
+
+.day1 > .day {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.day1 > .day-temp > .day-real-temp {
+  margin-bottom: 2px;
+}
+
+.day1 > .day-temp > .day-feels-like {
+  font-size: 12px;
+}
+
+/* Day 2 */
+
+.day2 {
+  grid-area:day2 ;
+  font-weight: 300;
+  border-right: 1px solid white;
+  margin-right: 16px;
+}
+
+.day2 > .day {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.day2 > .day-temp > .day-real-temp {
+  margin-bottom: 2px;
+}
+
+.day2 > .day-temp > .day-feels-like {
+  font-size: 12px;
+}
+
+/* Day 3 */
+
+.day3 {
+  grid-area:day3 ;
+  font-weight: 300;
+  border-right: 1px solid white;
+  margin-right: 16px;
+}
+.day3 > .day {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.day3 > .day-temp > .day-real-temp {
+  margin-bottom: 2px;
+}
+
+.day3 > .day-temp > .day-feels-like {
+  font-size: 12px;
+}
+
+/* Day 4 */
+
+.day4 {
+  grid-area:day4 ;
+  font-weight: 300;
+  border-right: 1px solid white;
+  margin-right: 16px;
+}
+.day4 > .day {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.day4 > .day-temp > .day-real-temp {
+  margin-bottom: 2px;
+}
+
+.day4 > .day-temp > .day-feels-like {
+  font-size: 12px;
+}
+
+/* Day 5 */
+
+.day5 {
+  grid-area: day5;
+  font-weight: 300;
+}
+.day5 > .day {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.day5 > .day-temp > .day-real-temp {
+  margin-bottom: 2px;
+}
+
+.day5 > .day-temp > .day-feels-like {
+  font-size: 12px;
+}

@@ -1,0 +1,25 @@
+:root{
+  --primary: #11998e;
+  --secondary: #38ef7d;
+  --white: #fff;
+  --gray: #9b9b9b;
+  }
+
+
+.header {
+  height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 16px;
+}
+.title {
+  font-size: 38px;
+  margin-left: 16px;
+  font-family: roboto;
+  font-weight: 300;
+  color: var(--white);
+  
+}
+
+
